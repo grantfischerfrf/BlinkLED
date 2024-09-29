@@ -1,0 +1,33 @@
+int ledPin = 9;  // Define interface 9
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+void loop() {
+  // Three short flashes to represent the letter "S"
+  for (int x = 0; x < 3; x++) {
+    digitalWrite(ledPin, HIGH);   // Set LED to ON
+    delay(150);                   // Delay for 150 milliseconds
+    digitalWrite(ledPin, LOW);    // Set LED to OFF
+    delay(100);                   // Delay for 100 milliseconds
+  }
+  // Delay of 200 milliseconds to create a gap between letters
+  delay(200);
+  // Three short flashes to represent the letter "O"
+  for (int x = 0; x < 3; x++) {
+    digitalWrite(ledPin, HIGH);   // Set LED to ON
+    delay(400);                   // Delay for 400 milliseconds
+    digitalWrite(ledPin, LOW);    // Set LED to OFF
+    delay(200);                   // Delay for 200 milliseconds
+  }
+  // Delay of 100 milliseconds to create a gap between letters
+  delay(100);
+  // Three short flashes to represent the letter "S" again
+  for (int x = 0; x < 3; x++) {
+    digitalWrite(ledPin, HIGH);   // Set LED to ON
+    delay(150);                   // Delay for 150 milliseconds
+    digitalWrite(ledPin, LOW);    // Set LED to OFF
+    delay(100);                   // Delay for 100 milliseconds
+  }
+  // Wait for 5 seconds before repeating the S.O.S signal
+  delay(5000);
+}
