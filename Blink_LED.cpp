@@ -13,7 +13,7 @@
 //
 // In this tutorial, we're using the blue D7 LED (next to D7 on the Photon
 // and Electron, and next to the USB connector on the Argon and Boron).
-const pin_t MY_LED = D7;
+const pin_t MY_LED = D6;
 
 // The following line is optional, but recommended in most firmware. It
 // allows your code to run before the cloud is connected. In this case,
